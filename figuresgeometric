@@ -1,0 +1,58 @@
+using System;
+
+public abstract class Figura {
+    public abstract double Area();
+    public abstract double Perimetro();
+}
+
+public class Cuadrado : Figura {
+    public double Lado;
+    public Cuadrado(double lado) {
+        Lado = lado;
+    }
+    public override double Area() {
+        return Lado * Lado;
+    }
+    public override double Perimetro() {
+        return 4 * Lado;
+    }
+}
+
+public class Circulo : Figura {
+    public double Radio;
+    public Circulo(double radio) {
+        Radio = radio;
+    }
+    public override double Area() {
+        return Math.PI * Radio * Radio;
+    }
+    public override double Perimetro() {
+        return 2 * Math.PI * Radio;
+    }
+}
+
+public class Rombo : Figura {
+    public double D1, D2, Lado;
+    public Rombo(double d1, double d2, double lado) {
+        D1 = d1; D2 = d2; Lado = lado;
+    }
+    public override double Area() {
+        return (D1 * D2) / 2;
+    }
+    public override double Perimetro() {
+        return 4 * Lado;
+    }
+}
+
+public class Cometa : Figura {
+    public double D1, D2, LadoA, LadoB;
+    public Cometa(double d1, double d2, double ladoA, double ladoB) {
+        D1 = d1; D2 = d2; LadoA = ladoA; LadoB = ladoB;
+    }
+    public override double Area() {
+        return (D1 * D2) / 2;
+    }
+    public override double Perimetro() {
+        return 2 * (LadoA + LadoB);
+    }
+}
