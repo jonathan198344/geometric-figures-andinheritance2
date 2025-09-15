@@ -1,0 +1,14 @@
+public class Parallelogram {
+    public double BaseLength, Height, Side;
+    public Parallelogram(double baseLength, double height, double side) {
+        BaseLength = baseLength;
+        Height = height;
+        Side = side;
+    }
+    public double Area() {
+        return BaseLength * Height;
+    }
+    public double Perimetro() {
+        return 2 * (BaseLength + Side);
+    }
+}
