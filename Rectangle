@@ -1,0 +1,13 @@
+public class Rectangle {
+    public double BaseLength, Height;
+    public Rectangle(double baseLength, double height) {
+        BaseLength = baseLength;
+        Height = height;
+    }
+    public double Area() {
+        return BaseLength * Height;
+    }
+    public double Perimetro() {
+        return 2 * (BaseLength + Height);
+    }
+}
