@@ -1,0 +1,6 @@
+public class Square {
+    public double Lado;
+    public Cuadrado(double lado) { Lado = lado; }
+    public double Area() { return Lado * Lado; }
+    public double Perimetro() { return 4 * Lado; }
+}
