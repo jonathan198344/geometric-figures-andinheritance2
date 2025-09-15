@@ -1,0 +1,8 @@
+public class kite{
+    public double D1, D2, LadoA, LadoB;
+    public Cometa(double d1, double d2, double ladoA, double ladoB) {
+        D1 = d1; D2 = d2; LadoA = ladoA; LadoB = ladoB;
+    }
+    public double Area() { return (D1 * D2) / 2; }
+    public double Perimetro() { return 2 * (LadoA + LadoB); }
+}
